@@ -13,7 +13,7 @@ async def skip(client, m: Message):
       if op==0:
          await m.reply("`Heç nə oxunmur`")
       elif op==1:
-         await m.reply("`Oxunan mahnı yoxdur, Səsli söhbətdən ayeıldım...`")
+         await m.reply("`Oxunan mahnı yoxdur, Səsli söhbətdən ayrıldım...`")
       else:
          await m.reply(f"**Növbəti mahnı⏭** \n**🎧 Oxunur** - [{op[0]}]({op[1]}) | `{op[2]}`", disable_web_page_preview=True)
    else:
