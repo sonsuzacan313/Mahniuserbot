@@ -48,13 +48,13 @@ async def ytdl(link):
       return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(['vplay'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['video'], prefixes=f"/"))
 async def vplay(client, m: Message):
    replied = m.reply_to_message
    chat_id = m.chat.id
    if replied:
       if replied.video or replied.document:
-         huehue = await replied.reply("`Downloading`")
+         huehue = await replied.reply("`Yüklənir`")
          dl = await replied.download()
          link = replied.link
          if len(m.command) < 2:
@@ -74,7 +74,7 @@ async def vplay(client, m: Message):
   
          if chat_id in QUEUE:
             pos = add_to_queue(chat_id, songname, dl, link, "Video", Q)
-            await huehue.edit(f"Queued at **#{pos}**")
+            await huehue.edit(f"**#{pos} növbəyə əlavə olundu**")
          else:
             if Q==720:
                hmmm = HighQualityVideo()
@@ -92,7 +92,7 @@ async def vplay(client, m: Message):
                stream_type=StreamType().pulse_stream,
             )
             add_to_queue(chat_id, songname, dl, link, "Video", Q)
-            await huehue.edit(f"**Started Playing Video ▶** \n**🎧 SONG** : [{songname}]({link}) \n**💬 CHAT** : `{chat_id}`", disable_web_page_preview=True)
+            await huehue.edit(f"**Video başladı ▶** \n**🎧 Adı** : [{songname}]({link}) \n**💬 Qrup ID** : `{chat_id}`", disable_web_page_preview=True)
       else:
          if len(m.command) < 2:
             await m.reply("`Reply to an Audio File or give something to Search`")
