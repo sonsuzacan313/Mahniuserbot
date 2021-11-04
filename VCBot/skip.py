@@ -5,7 +5,7 @@ from config import bot, call_py, HNDLR, contact_filter
 from VCBot.handlers import skip_current_song, skip_item
 from VCBot.queues import QUEUE, clear_queue
 
-@Client.on_message(contact_filter & filters.command(['deyis'], prefixes=f"/"))
+@Client.on_message(contact_filter & filters.command(['skip'], prefixes=f"/"))
 async def skip(client, m: Message):
    chat_id = m.chat.id
    if len(m.command) < 2:
@@ -33,7 +33,7 @@ async def skip(client, m: Message):
                   OP = OP + "\n" + f"**#{x}** - {hm}"
          await m.reply(OP)        
       
-@Client.on_message(contact_filter & filters.command(['dayan', 'end'], prefixes=f"/"))
+@Client.on_message(contact_filter & filters.command(['stop', 'end'], prefixes=f"/"))
 async def stop(client, m: Message):
    chat_id = m.chat.id
    if chat_id in QUEUE:
@@ -46,7 +46,7 @@ async def stop(client, m: Message):
    else:
       await m.reply("`Heçnə oxumur`")
    
-@Client.on_message(contact_filter & filters.command(['pauza'], prefixes=f"{HNDLR}"))
+@Client.on_message(contact_filter & filters.command(['pause'], prefixes=f"/"))
 async def pause(client, m: Message):
    chat_id = m.chat.id
    if chat_id in QUEUE:
@@ -58,7 +58,7 @@ async def pause(client, m: Message):
    else:
       await m.reply("`Heçnə oxumur`")
       
-@Client.on_message(contact_filter & filters.command(['davam'], prefixes=f"{HNDLR}"))
+@Client.on_message(contact_filter & filters.command(['resume'], prefixes=f"/"))
 async def resume(client, m: Message):
    chat_id = m.chat.id
    if chat_id in QUEUE:
