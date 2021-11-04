@@ -74,7 +74,7 @@ async def play(client, m: Message):
                stream_type=StreamType().pulse_stream,
             )
             add_to_queue(chat_id, songname, dl, link, "Audio", 0)
-            await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({link}) \n**👑 Qrup** : `{chat_name}`", disable_web_page_preview=True)
+            await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({link}) \n**👑 Qrup** : `{username}`", disable_web_page_preview=True)
       else:
          if len(m.command) < 2:
             await m.reply("`Mahnı adını yazın` **Nümunə: __/oxu ifrat heyif__**")
@@ -104,7 +104,7 @@ async def play(client, m: Message):
                            stream_type=StreamType().pulse_stream,
                         )
                         add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
-                        await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({url}) \n**👑 Qrup** : `{chat_name}`", disable_web_page_preview=True)
+                        await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({url}) \n**👑 Qrup** : `{username}`", disable_web_page_preview=True)
                      except Exception as ep:
                         await huehue.edit(f"`{ep}`")
             
@@ -137,7 +137,7 @@ async def play(client, m: Message):
                            stream_type=StreamType().pulse_stream,
                         )
                         add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
-                        await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({url}) \n**👑 Qrup** : `{chat_name}`", disable_web_page_preview=True)
+                        await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : [{songname}]({url}) \n**👑 Qrup** : `{username}`", disable_web_page_preview=True)
                      except Exception as ep:
                         await huehue.edit(f"`{ep}`")
 
