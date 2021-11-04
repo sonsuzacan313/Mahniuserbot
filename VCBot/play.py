@@ -46,7 +46,7 @@ async def ytdl(link):
       return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(['oxu'], prefixes=f"/"))
+@Client.on_message(filters.command(['play'], prefixes=f"/"))
 async def play(client, m: Message):
    replied = m.reply_to_message
    chat_id = m.chat.id
@@ -110,7 +110,7 @@ async def play(client, m: Message):
             
    else:
          if len(m.command) < 2:
-            await m.reply("`Mahnı adını yazın` **Nümunə: __/oxu ifrat heyif__**")
+            await m.reply("`Mahnı adını yazın` **Nümunə: __/play ifrat heyif__**")
          else:
             huehue = await m.reply("`Axtarılır...`")
             query = m.text.split(None, 1)[1]
