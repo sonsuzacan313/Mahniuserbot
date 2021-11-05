@@ -134,7 +134,7 @@ async def vplay(client, m: Message):
          if len(m.command) < 2:
             await m.reply("`Video adını yazın`")
          else:
-            huehue = await m.reply("`Searching...`")
+            huehue = await m.reply("`Axtarılır...`")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
