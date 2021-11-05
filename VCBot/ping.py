@@ -48,5 +48,5 @@ async def restart(client, m: Message):
 
 @Client.on_message(contact_filter & filters.command(['start'], prefixes=f"/"))
 async def help(client, m: Message):
-   HELP = f"**işləmə qaydası 🛠** \n\n__USER əmrləri__ (👑): \n`/play` \n`/yayim` \n`/canli` (Radio linki) \n`/yayim` (.m3u8 / canlı link) \n`/kanal [kanal linki] ; [n]` - kanaldan mahnı seçərək səsləndirər \n`/siyahi` / `/playlist` \n\n__SUDO COMMANDS__ (Can only be accessed by You and Your Contacts): \n`/ping` \n`/skip` \n`/pause` and `/resume` \n`/stop` / `/end` \n`/help` \n`!restart`"
+   HELP = f"**işləmə qaydası 🛠** \n\n__Adi istifadəçi əmrləri__ (👑): \n`/play mahnı adı yazın` \n`/kanal [kanal linki] ; [n]` - kanaldan mahnı seçərək səsləndirər \n`/siyahi` / `/playlist növbədə olan mahnı siyahısını göstərər` \n\n__Admin əmrləri__ (İşləməsi üçün userbotun kontaktınaa əlavə edilin): \n`/ping botun pingini göstərər` \n`/skip növbəti mahnıya keçid edər` \n`/pause mahnını dayandırar` və `/resume mahnını davam etdirər` \n`/stop Oxutmanı sonlandırar` / `/end oxutmanı sonlandırar` \n`/start kömək menyusunu açar` \n`!restart botu yenidən başladar`"
    await m.reply(HELP)
