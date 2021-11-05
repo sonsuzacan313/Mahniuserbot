@@ -48,5 +48,5 @@ async def restart(client, m: Message):
 
 @Client.on_message(contact_filter & filters.command(['/'], prefixes=f"/"))
 async def help(client, m: Message):
-   HELP = f"**işləmə qaydası 🛠** \n\n__USER əmrləri__ (👑): \n`/play` \n`/yayim` \n`/canli` (Radio linki) \n`/yayim` (.m3u8 / canlı link) \n`/kanal [kanal linki] ; [n]` - kanaldan mahnı seçərək səsləndirər \n`/siyahi` / `/playlist` \n\n__SUDO COMMANDS__ (Can only be accessed by You and Your Contacts): \n`{HNDLR}ping` \n`{HNDLR}skip` \n`{HNDLR}pause` and `{HNDLR}resume` \n`{HNDLR}stop` / `{HNDLR}end` \n`{HNDLR}help` \n`{HNDLR}restart`"
+   HELP = f"**işləmə qaydası 🛠** \n\n__USER əmrləri__ (👑): \n`/play` \n`/yayim` \n`/canli` (Radio linki) \n`/yayim` (.m3u8 / canlı link) \n`/kanal [kanal linki] ; [n]` - kanaldan mahnı seçərək səsləndirər \n`/siyahi` / `/playlist` \n\n__SUDO COMMANDS__ (Can only be accessed by You and Your Contacts): \n`/ping` \n`/skip` \n`/pause` and `/resume` \n`/stop` / `/end` \n`/help` \n`!restart`"
    await m.reply(HELP)
