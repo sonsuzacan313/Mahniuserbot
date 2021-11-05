@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from VCBot.queues import QUEUE, get_queue
 from config import HNDLR, contact_filter
 
-@Client.on_message(filters.command(['siyahi', 'queue'], prefixes=f"/"))
+@Client.on_message(filters.command(['siyahi', 'playlist'], prefixes=f"/"))
 async def playlist(client, m: Message):
    chat_id = m.chat.id
    if chat_id in QUEUE:
