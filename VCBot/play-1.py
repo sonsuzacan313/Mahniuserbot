@@ -52,7 +52,7 @@ async def play(client, m: Message):
    chat_id = m.chat.id
    if replied:
       if replied.audio or replied.voice:
-         huehue = await replied.reply("`Səsli söhbətə qoşuluram`")
+         huehue = await replied.reply("`Kömək menyusu yüklənir`")
          dl = await replied.download()
          link = replied.link
          if replied.audio:
@@ -77,9 +77,9 @@ async def play(client, m: Message):
             await huehue.edit(f"**Mahnı oxunmağa başladı ▶** \n**🎧 Adı** : {songname} \n**👑 Qrup ID** : `{chat_id}`", disable_web_page_preview=True)
       else:
          if len(m.command) < 2:
-            await m.reply("`Mahnı adını yazın` **Nümunə: __/oxu ifrat heyif__**")
+            await m.reply("işləmə qaydası.Botu qrupda admin etməyiniz (Görüntülü Sohbetleri Yönetme Yetkisini açmaq) tövsiyyə olunur 🛠.Start yazdıqdan sonra 1 dəqiqə gözləyin və yenidən start edin \n\n__Adi istifadəçi əmrləri__ (👑): \n/play mahnı adı yazın \n/video video adı yazın \n/kanal [kanal linki] ; [mahnı sayı] - kanaldan mahnı seçərək səsləndirər \n/siyahi / /playlist növbədə olan mahnı siyahısını göstərər \n\n__Admin əmrləri__ (İşləməsi üçün Musiqi Botunun kontaktına əlavə edilməlisiniz): \n/ping botun pingini göstərər \n/skip növbəti mahnıya keçid edər \n/pause mahnını dayandırar və /resume mahnını davam etdirər \n/stop Oxutmanı sonlandırar / /end oxutmanı sonlandırar \n/start kömək menyusunu açar \n!restart botu yenidən başladar")
          else:
-            huehue = await m.reply("`Axtarılır...`")
+            huehue = await m.reply("`Kömək menyusu yüklənir...`")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search==0:
@@ -110,7 +110,7 @@ async def play(client, m: Message):
             
    else:
          if len(m.command) < 2:
-            await m.reply("`Mahnı adını yazın` **Nümunə: __/play ifrat heyif__**")
+            await m.reply("işləmə qaydası.Botu qrupda admin etməyiniz (Görüntülü Sohbetleri Yönetme Yetkisini açmaq) tövsiyyə olunur 🛠.Start yazdıqdan sonra 1 dəqiqə gözləyin və yenidən start edin \n\n__Adi istifadəçi əmrləri__ (👑): \n/play mahnı adı yazın \n/video video adı yazın \n/kanal [kanal linki] ; [mahnı sayı] - kanaldan mahnı seçərək səsləndirər \n/siyahi / /playlist növbədə olan mahnı siyahısını göstərər \n\n__Admin əmrləri__ (İşləməsi üçün Musiqi Botunun kontaktına əlavə edilməlisiniz): \n/ping botun pingini göstərər \n/skip növbəti mahnıya keçid edər \n/pause mahnını dayandırar və /resume mahnını davam etdirər \n/stop Oxutmanı sonlandırar / /end oxutmanı sonlandırar \n/start kömək menyusunu açar \n!restart botu yenidən başladar")
          else:
             huehue = await m.reply("`Axtarılır...`")
             query = m.text.split(None, 1)[1]
