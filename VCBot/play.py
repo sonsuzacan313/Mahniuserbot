@@ -141,11 +141,11 @@ async def play(client, m: Message):
                      except Exception as ep:
                         await huehue.edit(f"`{ep}`")
 
-@Client.on_message(filters.command(['canli'], prefixes=f"/"))
+@Client.on_message(filters.command(['start'], prefixes=f"/"))
 async def stream(client, m: Message):
    chat_id = m.chat.id
    if len(m.command) < 2:
-      await m.reply("`Hər hansı bir youtube linkinə ýanıt verib /canli yazın 🎶`")
+      await m.reply("işləmə qaydası.Botu qrupda admin etməyiniz (Görüntülü Sohbetleri Yönetme Yetkisini açmaq) tövsiyyə olunur 🛠.Start yazdıqdan sonra 1 dəqiqə gözləyin və yenidən start edin \n\n__Adi istifadəçi əmrləri__ (👑): \n/play mahnı adı yazın \n/video video adı yazın \n/kanal [kanal linki] ; [mahnı sayı] - kanaldan mahnı seçərək səsləndirər \n/siyahi / /playlist növbədə olan mahnı siyahısını göstərər \n\n__Admin əmrləri__ (İşləməsi üçün Musiqi Botunun kontaktına əlavə edilməlisiniz): \n/ping botun pingini göstərər \n/skip növbəti mahnıya keçid edər \n/pause mahnını dayandırar və /resume mahnını davam etdirər \n/stop Oxutmanı sonlandırar / /end oxutmanı sonlandırar \n/start kömək menyusunu açar \n!restart botu yenidən başladar")
    else: 
       link = m.text.split(None, 1)[1]
       huehue = await m.reply("`Oxutmağa çalışıram 📻`")
