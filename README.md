@@ -10,6 +10,8 @@ _`Çoxlu funksiya`lara malik mükəmməl Userbot😍. !_
 :--- | :---
 /play | Mahnı oxudar.
 /vplay | video göstərər.
+/canli | canlı yayım başladar.
+/radio | radio dinlə.
 /song | mahnı yükləyər.
 /video, /vsong | video yükləyər.
 /ses | mətni səsə çevirər.
