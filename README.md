@@ -1,64 +1,32 @@
-# TG-MusicPlayer
-A Telegram Userbot to play Audio and Video songs / files in Telegram Voice Chats.
+<p align="center">
+  <img src="https://telegra.ph/file/81a9e1d0da4d570012592.jpg" width="200" height="200">
+</p>
 
-It's made with [PyTgCalls](https://github.com/pytgcalls/pytgcalls) and [Pyrogram](https://github.com/pyrogram/pyrogram)
+# 𓆩ᴅs𓆪 Mᴜsɪ́ᴄ♪ Userbot
+_`Çoxlu funksiya`lara malik mükəmməl Userbot😍. !_
 
+### Məlumat👇
+Əmrlər | Funksiya
+:--- | :---
+/play | Mahnı oxudar.
+/vplay | video göstərər.
+/song | mahnı yükləyər.
+/video, /vsong | video yükləyər.
+/ses | mətni səsə çevirər.
+/q, /stiker | stiker hazırlayar.
+/pause | oxumanı pauza edər.
+/resume | oxumanı davam etdirər.
+/end, /dayan | oxumanı sonlandırar.
+/help | kömək menyusunu açar.
+/playlist, /siyahi | mahnı siyahısını açar.
+/skip | növbəti mahnıya keçər.
+/ping | işləmə vaxtı və bot statusunu göstərər.
+/restart | userbotu yenidən işə salar
 
-## Requirements
-- Python 3.8+
-- FFMPEG
-- Nodejs v16+
+### Heroku-ya Deployla👇
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/userbot2)
 
+### Sahiblə əlaqə👇
+- <a href="https://t.me/ABISHOV_27"><img src="https://img.shields.io/badge/-²⁷ʏᴜsʜᴋᴀ⁰³-0290F7?style=flat-square&amp;labelColor=FFFFFF&amp;logo=Telegram&amp;link=https://t.me/ABISHOV_27" alt="Telegram Badge"></a>
 
-## Deployment
-
-### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-### Local Deploy
-1) Installing NodeJS
-```bash
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-2) Installing FFMPEG and Git
-```bash
-sudo apt-get install git ffmpeg -y
-```
-
-3) Cloning the Repo
-```bash
-git clone https://github.com/Lost-In-Dark/TG-MusicPlayer
-cd TG-MusicPlayer
-```
-
-4) Rename `example.env` to `.env` and Fill in the Environment Variables
-
-5) Installing Requirements
-```bash
-pip3 install -U -r requirements.txt
-```
-
-6) Run the Bot
-```bash
-python3 main.py
-```
-
-
-## Environment Variables
-- `API_ID`
-- `API_HASH`
-- `SESSION` - A Pyrogram String Session. Get one from [Here](https://replit.com/@dashezup/generate-pyrogram-session-string)
-- `HNDLR` - Your Userbot Handler (Default is !)
-
-
-## Commands and Usage
-1) Start the Userbot, check if the Userbot is running by `!ping`.
-2) Commands of this userbot are accessible to and can be used by the Account itself and it's Contacts.
-3) Check `!help` for commands.
-
-
-## Credits ✨
-- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Laky](https://github.com/Laky-64) for [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
+**Məni `Github`dan izləməyi unutmayın ✌️**
