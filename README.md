@@ -26,7 +26,7 @@ _`Çoxlu funksiya`lara malik mükəmməl Userbot😍. !_
 /restart | userbotu yenidən işə salar
 
 ### Heroku-ya Deployla👇
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/userbot2)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/mahniuserbot)
 
 ### Sahiblə əlaqə👇
 - <a href="https://t.me/ABISHOV_27"><img src="https://img.shields.io/badge/-²⁷ʏᴜsʜᴋᴀ⁰³-0290F7?style=flat-square&amp;labelColor=FFFFFF&amp;logo=Telegram&amp;link=https://t.me/ABISHOV_27" alt="Telegram Badge"></a>
